@@ -9,5 +9,5 @@ GitHub Username: KiraIkuz
 Repo: https://github.com/KiraIkuz/KiraIkuz.github.io.git
 Pages: KiraIkuz.github.io
 
-# For our Bash Commit
+# For our Bash Commits
 
