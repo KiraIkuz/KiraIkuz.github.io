@@ -5,6 +5,7 @@
    AME 230 Programming For Media Arts 
    Professor Jennifer Weiler
    Bill Cypher PART 2!!!!
+   (Variables are below, I have them labeled)
 */
 function setup() {
   createCanvas(600, 600);
@@ -33,7 +34,7 @@ function draw() {
   // Body Glow
   fill(255, 255, 100, 128 + sin(frameCount * 0.04) * 128);
   triangle(300, 190, 190, 405, 410, 405);
-  // Hat Glow
+  // Hat Glow (Updated Hat Glow after Part 2)
   beginShape();
   vertex(287, 98);
   vertex(312, 98);
@@ -109,6 +110,7 @@ first, in order to help eventually develop the glow code.*/
   vertex(290, 185);
   endShape(CLOSE);
 
+  // New Variables for Project 2
   let ratioX = mouseX / width;
   let pupilX = ratioX * 30 + 285;
   /* Making this safeguard if statement so that if the user
