@@ -33,7 +33,7 @@ function draw() {
 
   // Body Glow
   fill(255, 255, 100, 128 + sin(frameCount * 0.04) * 128);
-  triangle(300, 190, 190, 405, 410, 405);
+  triangle(300, 190, 190, 405, 415, 405);
   // Hat Glow (Updated Hat Glow after Part 2)
   beginShape();
   vertex(287, 98);
@@ -150,8 +150,8 @@ first, in order to help eventually develop the glow code.*/
   line(317, 328, 325, 339);
 
  // Starts Brick-Like Structure
-  stroke(255, 255, 100);
-  line(226, 350, 374, 350); // Top line (Left-to-Right)
+  stroke(255, 219, 88);
+  line(226, 350, 378, 350); // Top line (Left-to-Right)
 
   line(235, 350, 235, 368); // Top Left Line
 
@@ -159,13 +159,13 @@ first, in order to help eventually develop the glow code.*/
 
   line(365, 350, 365, 368); // Top Right Line
 
-  line(217, 368, 383, 368); // Middle Line (L-R)
+  line(216, 368, 387, 368); // Middle Line (L-R)
 
   line(267, 370, 267, 385); // Middle Left Line
 
   line(332, 370, 332, 385); // Middle Right Line
 
-  line(208, 385, 392, 385); // Bottom Line (L-R)
+  line(208, 385, 396, 385); // Bottom Line (L-R)
 
   line(235, 385, 235, 399); // Bottom Left Line
 
