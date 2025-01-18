@@ -13,7 +13,7 @@ function setup() {
 function draw() {
   background(150);
 
-  noStroke(); //Leaving note, trying new things to see if the code will save
+  noStroke();
   
   /* Wanted to use CSS Glow animation, but could not and still
   keep background, so I used Meta AI to help me find way to do 
