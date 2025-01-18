@@ -1,9 +1,10 @@
 // sketch.js
 
 /* Juliette Bell-Ludwig
-   1/15/2025
+   1/18/2025
    AME 230 Programming For Media Arts 
    Professor Jennifer Weiler
+   Bill Cypher PART 2!!!!
 */
 function setup() {
   createCanvas(600, 600);
@@ -21,21 +22,27 @@ function draw() {
   for the assignment. The rest of the assignment is my own 
   original creation, besides the one fill right below this, 
   that was the only thing I used the AI to help with. I have no
-  problem sharing chat log, if need be.*/
+  problem sharing chat log, if need be.
+  
+  P.S. I wanted to make the character glow, as he does
+  in the show Gravity Falls, giving him an "otherworldy
+  ethereal" presence, and I wanted to keep that true to
+  the character.*/
 
 
   // Body Glow
-  fill(255, 255, 100, 128 + sin(frameCount * 0.03) * 128);
+  fill(255, 255, 100, 128 + sin(frameCount * 0.04) * 128);
   triangle(300, 190, 190, 405, 410, 405);
+  // Hat Glow
   beginShape();
-  vertex(288, 99);
-  vertex(312, 99);
-  vertex(312, 183);
-  vertex(327, 183);
+  vertex(287, 98);
+  vertex(312, 98);
+  vertex(312, 184);
+  vertex(327, 184);
   vertex(327, 192);
   vertex(273, 192);
   vertex(273, 183);
-  vertex(288, 183);
+  vertex(287, 183);
   endShape(CLOSE);
 
   //Left Arm Glow
@@ -81,18 +88,10 @@ function draw() {
   
   endShape(CLOSE);
 
-
-
-
-
-
 /* I put my code for the main project down lower so it didn't
 get jumbled in with the code for the glow. I created this code
 first, in order to help eventually develop the glow code.*/
 
-
-
-  
   stroke(255, 255, 0); // Main Body for Bill
   strokeWeight(1);
   fill(255, 255, 0);
@@ -110,15 +109,32 @@ first, in order to help eventually develop the glow code.*/
   vertex(290, 185);
   endShape(CLOSE);
 
+  let ratioX = mouseX / width;
+  let pupilX = ratioX * 30 + 285;
+  /* Making this safeguard if statement so that if the user
+  goes way past the canvas to the point of "breaking" the 
+  character's eye, it will pop back to the center of Bill.
+  Still stutters if user keeps moving the cursor, but is
+  essentially doing what I want it to.*/
+  if (mouseX > 900) {
+    mouseX = 310
+  }
+
+  let eyeX = 300;
+  let eyeY = 300;
+  let eyeSizeOne = 15;
+  let eyeSizeTwo = 50;
+  let ratioY = mouseY / width;
+  let pupilY = ratioY * 15 + 290;
+
+
   fill(255); // Eyeball Shape
   stroke(0);
   strokeWeight(2);
-  ellipse(300, 300, 80, 60);
+  ellipse(eyeX, eyeY, 80, 60);
 
-  fill(0); /* Inner Iris (Purposefully made him look to the 
-  right, to make it look like he is looking at the code on 
-  right-side of your screen.)*/
-  ellipse(315, 300, 15, 50);
+  fill(0); // Inner Iris
+  ellipse(pupilX, pupilY, eyeSizeOne, eyeSizeTwo);
 
   // Starts the Top Eyelashes
   line(278, 273, 273, 265);
