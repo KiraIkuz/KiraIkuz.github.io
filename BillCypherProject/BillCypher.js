@@ -121,6 +121,11 @@ first, in order to help eventually develop the glow code.*/
   if (mouseX > 900) {
     mouseX = 310
   }
+ 
+  /*stroke(255, 255, 0); // Main Body for Bill
+  strokeWeight(1);
+  fill(255, 255, 0);
+  triangle(300, 200, 200, 400, 405, 400);*/
 
   let eyeX = 300;
   let eyeY = 300;
