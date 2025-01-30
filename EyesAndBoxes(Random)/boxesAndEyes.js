@@ -9,7 +9,7 @@ let x;
 
 function setup() {
     createCanvas(600, 600);
-    
+    frameRate(1);
 }
 
 
@@ -70,6 +70,6 @@ function draw() {
     }
 
     
-    noLoop();
+   
 
 }
