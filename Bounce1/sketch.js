@@ -21,7 +21,7 @@ function setup() {
 
 
 function draw() {
-  background(220);
+  background(100, 150, 200);
 
   const rightEdge = width;
   const leftEdge = 0;
