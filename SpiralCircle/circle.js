@@ -19,8 +19,8 @@ function setup() {
         circle.push(c1);
         circle.push(c2);
 
-        a += 0.1;
-        radius += 2;
+        a += random(0.1, 0.2);
+        radius += random(1.0, 3.0);
         size += 0.1
     }
 }
