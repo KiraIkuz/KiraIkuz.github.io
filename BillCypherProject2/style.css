@@ -1,0 +1,26 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes glow {
+  0% {box-shadow: 10px 10px 10px yellow;}
+  10% {box-shadow: 10px 10px 10px yellow;}
+  20% {box-shadow: 10px 10px 10px yellow;}
+  30% {box-shadow: 10px 10px 10px yellow;}
+  40% {box-shadow: 10px 10px 10px yellow;}
+  50% {box-shadow: 10px 10px 10px yellow;}
+  60% {box-shadow: 10px 10px 10px yellow;}
+  70% {box-shadow: 10px 10px 10px yellow;}
+  80% {box-shadow: 10px 10px 10px yellow;}
+  90% {box-shadow: 10px 10px 10px yellow;}
+  100% {box-shadow: 10px 10px 10px yellow;}
+}
+
+.draw {
+  animation: glow 20s ease-in-out infinite;
+}
+
+canvas {
+  display: block;
+}
