@@ -27,6 +27,7 @@ function draw() {
         fill(r, g, b, a);
         let size = random(0, 20);
         ellipse(x, y, size, size * 2);
+        rect(x, y, size / 2, size / 8);
     }
     noLoop();
 }
