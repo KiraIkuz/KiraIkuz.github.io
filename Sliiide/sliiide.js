@@ -61,6 +61,11 @@ function reset() {
     sliiiide = 100;
 }
 
+function keyPressed() {
+    if(key == "r") {
+        reset();
+    }
+}
 
 class AnimationTicket {
     constructor() {
